@@ -1,0 +1,476 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+// No class
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 100px;
+    /* bottom = footer height */
+}
+
+// Background
+.bg1{
+    background-image: url("https://cdn.discordapp.com/attachments/753878339936059412/781096837410062337/UntitledscrumappBanner_1.jpg") ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.bg2{
+    background-color: $light-grey;
+    font-family: 'Roboto', 'sans-serif';
+    color: $dark-anthracite;
+    height: 100%;
+}
+
+// Text
+.title-anthracite{
+    font-family: 'Arial', 'sans-serif';
+    font-weight: bold;
+    font-size: 24px;
+    color: $dark-anthracite;
+}
+
+.title-light-anthracite{
+    font-family: 'Arial', 'sans-serif';
+    font-weight: bold;
+    font-size: 24px;
+    color: $light-anthracite;
+}
+
+.title-grey{
+    font-family: 'Arial', 'sans-serif';
+    font-weight: bold;
+    font-size: 24px;
+    color: $light-grey;
+}
+
+.title-dark-grey{
+    font-family: 'Arial', 'sans-serif';
+    font-weight: bold;
+    font-size: 24px;
+    color: $dark-grey;
+}
+
+
+.sub-anthracite{
+    font-family: 'Arial', 'sans-serif';
+    font-size: 20px;
+    font-weight: bold;
+    color: $anthracite;
+}
+
+.sub-dark-anthracite{
+    font-family: 'Arial', 'sans-serif';
+    font-size: 20px;
+    font-weight: bold;
+    color: $dark-anthracite;
+}
+
+
+.sub-grey{
+    font-family: 'Arial', 'sans-serif';
+    font-size: 20px;
+    font-weight: bold;
+    color: $grey;
+}
+
+.sub-dark-grey{
+    font-family: 'Arial', 'sans-serif';
+    font-size: 20px;
+    font-weight: bold;
+    color: $dark-grey;
+}
+
+.plat-anthracite{
+    font-family: 'Arial', 'sans-serif';
+    font-size: 16px;
+    font-weight: normal;
+    color: $anthracite;
+}
+
+.plat-dark-anthracite{
+    font-family: 'Arial', 'sans-serif';
+    font-size: 16px;
+    font-weight: normal;
+    color: $dark-anthracite;
+}
+
+.plat-grey{
+    font-family: 'Arial', 'sans-serif';
+    font-size: 16px;
+    font-weight: normal;
+    color: $grey;
+}
+
+.plat-dark-grey{
+    font-family: 'Arial', 'sans-serif';
+    font-size: 16px;
+    font-weight: normal;
+    color: $dark-grey;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.30), 0 2px 6px 2px rgba(60,64,67,.15);
+    display: none;
+    position: fixed;
+    top: 29%;
+    left: 40%;
+    padding: 20px;
+    z-index: 2;
+}
+
+// selectbox van de leden toevoegen optie
+.selectbox {
+    position: relative;
+    margin: 0 auto;
+    font-size: 18px;
+    color: #60666d;
+}
+
+// h1 van de leden toevoegen optie
+.h1select
+{
+    font-family: roboto bold;
+}
+
+/*nav new project page*/
+.container-new{
+    padding-top: 80px;
+    padding-left: 60px;
+}
+.new {
+    font-size: 25px;
+    font-weight: bolder;
+}
+.new ul{
+    list-style-type: none;
+}
+.new li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+.newClick{
+    cursor: pointer;
+}
+
+.projectclass{
+    font-size: 20px;
+    font-weight: bolder;
+    color: white;
+    padding-top: 40px;
+    padding-left: 120px;
+}
+
+/*block new project page*/
+.colorproject{
+    background-color: #2E6481;
+    color: white;
+    width: 500px;
+}
+
+#colorproject{
+    background-color: #2E6481;
+    padding-bottom: 150px;
+}
+
+.box{
+    padding-bottom: 30px;
+}
+// Navigation ↓
+
+// nav logo
+.scrumlogo {
+    width: max-content;
+    height: max-content;
+}
+
+// login-register text
+.nav-link{
+    color:white !important;
+    text-transform: uppercase;
+    font-size: 21px;
+    margin-right: 45px;
+    &:hover{
+        filter: brightness(70%);
+    }
+}
+
+// nav bar
+.nav-login{
+    background-image: linear-gradient(to right, #aecad9 , #8cb0c3 , #2e6481);
+    height: 90px;
+    margin-bottom: 30px;
+}
+
+// background loginnavbar.blade (when logged in)
+.antialiased{
+    background-image: url('/img/welcomejpg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+// background app.blade (when not logged in)
+.login-register{
+    background-image: url('/img/welcomelogin.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+// authentication links
+.user{
+    margin-bottom: auto;
+    width: 120px;
+    padding-top: 7px;
+}
+
+//  button (boards & sprints)
+.dropbtn {
+    z-index: 10;
+    background-color: transparent;
+    color: white;
+    padding: 16px;
+    font-size: 21px;
+    border: none;
+    &:hover{
+        filter: brightness(70%);
+    }
+}
+
+// button (boards & sprints)
+.dropdown {
+    z-index: 10;
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    margin-right: 200px;
+}
+
+// button (boards & sprints)
+.dropdown-content {
+    z-index: 10;
+    display: none;
+    position: absolute;
+    background-color: #2E6481;
+    min-width: 150px;
+    opacity: 0.8;
+}
+
+// dropdown text (boards & sprints)
+.dropdown-content a {
+    z-index: 10;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    &:hover{
+    background-color: #ddd;
+    }
+}
+
+// bootstrap
+.dropdown:hover .dropdown-content {display: block;}
+
+// when hover (boards & sprints)
+.dropdown:hover .dropbtn {background-color: transparent;}
+
+// end nav bar
+
+// alignt content
+.align-right{
+    text-align: right;
+}
+
+// standard padding
+.tenpadding{
+    padding: 10px;
+}
+
+// backlog workitem table
+.table-head {
+    background-color: #8cb0c3;
+}
+
+tbody {
+    background-color: #F6F7F8;
+    color: #4e555b
+}
+
+.text-backlog {
+    font-weight: bold;
+}
+
+// footer
+.footer{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 60px;
+    width: 100%;
+    overflow:hidden;
+    background-color: #B6B6B6;
+    color: white;
+    text-align: center;
+}
+
+/* The popup form - hidden by default */
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    padding: 20px;
+    z-index: 2;
+}
+
+//text area for new retrospective comment
+.retroinput {
+    width: 300px;
+    height: 150px;
+}
+/* sprintboard styling */
+
+/* backlog ptags in board */
+.poard {
+    font-size: 16px;
+    margin: 3px;
+}
+
+//Standard board cards
+.standardcard {
+    border-left-color: #6a99b2;
+    border-radius: 20px;
+    width: 250px;
+    height: 200px;
+}
+
+.titlecard {
+    color: #6a99b2;
+    margin-top: 20px;
+}
+
+
+//postedby text retrospective
+.postedBy {
+        display: flex;
+        flex-direction: column;
+        letter-spacing: 1px;
+        font-size: 12px;
+}
+
+//span text retrospective
+.spanretro {
+    font-size: 12px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+
+//Retrospective positive cards
+.positivecard {
+ border-left-color: green;
+    border-radius: 20px;
+}
+
+//Retrospective positive cards
+.negativecard {
+    border-left-color: darkred;
+    border-radius: 20px;
+}
+
+//shadow around retrospective cards
+.shadow1 {
+    box-shadow: 0 7px 30px -10px rgba(150,170,180,0.5);
+}
+
+.reviewinput {
+    width: 500px;
+}
+
+//Standard board cards
+.standardcard {
+    border-left-color: #6a99b2;
+    border-radius: 20px;
+    width: 250px;
+}
+
+.standardcardbig {
+    border-color: #6a99b2;
+    border-radius: 20px;
+    width: 400px;
+    margin-top: 30px;
+}
+
+.standardcardbig:hover {
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 0 1px 2px 0 rgba(60,64,67,.30), 0 2px 6px 2px rgba(60,64,67,.15);
+}
+
+.ahrefcard {
+    text-decoration: none;
+}
+
+.ahrefcard:hover {
+    text-decoration: none;
+}
+
+p {
+    color: #4e555b;
+}
+
+.cardtitle {
+    margin: 0;
+}
+
+#card {
+    margin-left: 15px;
+}
+
+/* backlog ptags in big board */
+.poardbig {
+    font-size: 15px;
+    margin-top: 0;
+    margin-bottom: 7px;
+}
+
+#teamlink {
+    right: 45%;
+    padding: 20px;
+}
+
+.pad {
+    padding: 15px;
+}
+.pad:hover {
+    border-color: #6a99b2;
+    border-radius: 20px;
+    box-shadow: none;
+}
+
+//styling tables
+
+//alle tables
+.table {
+    box-shadow: 5px 5px 10px lightgrey;
+    table-layout: fixed;
+}
+
+.table-head {
+    background-color: #6a99b2;
+    color: white;
+}
